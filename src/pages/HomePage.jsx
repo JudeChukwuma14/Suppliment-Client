@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
+import ProductCard from "../components/ProductCard"
+import CategoryCard from "../components/CategoryCard"
+import TestimonialCard from "../components/TestimonialCard"
+import NewsletterForm from "../components/NewsletterForm"
 import { TruckIcon, Pill, ShieldCheck, Clock, Headphones, BadgePercent } from "lucide-react"
-import CategoryCard from "../components/reuseable/CategoryCard"
-import ProductCard from "../components/reuseable/ProductCard"
-import TestimonialCard from "../components/reuseable/TestimonialCard"
 
 const HomePage = () => {
   const featuredProducts = [
