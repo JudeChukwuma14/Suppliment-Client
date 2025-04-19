@@ -118,7 +118,7 @@ const Header = () => {
               <Phone size={20} className="text-[#2196F3] mr-2" />
               <div>
                 <p className="text-sm text-gray-500">Sales & Service Support</p>
-                <p className="font-semibold">080-1234-5678</p>
+                <p className="font-semibold">0817-676-5163</p>
               </div>
             </div>
 
