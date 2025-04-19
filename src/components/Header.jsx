@@ -45,12 +45,12 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full">
       {/* Notification Bar */}
       <div className="bg-[#2196F3] text-white py-2 px-4 text-sm">
-        <div className="container-custom flex justify-between items-center">
+        <div className="flex items-center justify-between container-custom">
           <p className="text-xs md:text-sm">
             Delivery timeline: For Orders placed before 12pm will deliver same day in Lagos State Only. Cash on Delivery
             Option is only Applicable in Lagos State
           </p>
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="items-center hidden space-x-4 md:flex">
             <div className="flex items-center">
               <span>₦ NGN</span>
               <ChevronDown size={14} className="ml-1" />
@@ -68,19 +68,19 @@ const Header = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex flex-col ">
               <span className="text-2xl font-bold text-[#2196F3]">
-                Kli<span className="text-[#87CEEB]">Store</span>
+              Medzion<span className="text-[#87CEEB]">Pharma</span>
               </span>
-              <span className="hidden md:block text-xs text-gray-500 ml-2">Nigeria's Trusted Online Pharmacy</span>
+              <span className="hidden  text-[10px] text-gray-500 md:block text-start">Nigeria's Trusted Online Pharmacy</span>
             </Link>
 
             {/* Search Bar */}
-            <div className="hidden md:flex flex-1 max-w-xl mx-4">
+            <div className="flex-1 hidden max-w-xl mx-4 md:flex">
               <div className="relative flex w-full">
                 <div className="relative">
                   <button
-                    className="h-full px-4 bg-gray-100 border border-gray-300 rounded-l-lg flex items-center text-gray-700 font-medium"
+                    className="flex items-center h-full px-4 font-medium text-gray-700 bg-gray-100 border border-gray-300 rounded-l-lg"
                     onClick={() => setIsCategoryOpen(!isCategoryOpen)}
                   >
                     Category
@@ -88,7 +88,7 @@ const Header = () => {
                   </button>
 
                   {isCategoryOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-56 bg-white shadow-lg rounded-lg z-50 py-2">
+                    <div className="absolute left-0 z-50 w-56 py-2 mt-1 bg-white rounded-lg shadow-lg top-full">
                       {categories.map((category, index) => (
                         <Link
                           key={index}
@@ -105,7 +105,7 @@ const Header = () => {
                 <input
                   type="text"
                   placeholder="What are you looking for?"
-                  className="flex-1 border border-gray-300 border-l-0 border-r-0 py-2 px-4 focus:outline-none"
+                  className="flex-1 px-4 py-2 border border-l-0 border-r-0 border-gray-300 focus:outline-none"
                 />
                 <button className="bg-[#F5A623] hover:bg-[#E69512] text-white px-5 rounded-r-lg flex items-center justify-center">
                   <Search size={20} />
@@ -114,7 +114,7 @@ const Header = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="hidden lg:flex items-center mr-4">
+            <div className="items-center hidden mr-4 lg:flex">
               <Phone size={20} className="text-[#2196F3] mr-2" />
               <div>
                 <p className="text-sm text-gray-500">Sales & Service Support</p>
@@ -147,7 +147,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search products..."
-                className="w-full border border-gray-300 rounded-l-lg py-2 px-4 focus:outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none"
               />
               <button className="bg-[#F5A623] hover:bg-[#E69512] text-white px-3 rounded-r-lg flex items-center justify-center">
                 <Search size={18} />
@@ -158,7 +158,7 @@ const Header = () => {
       </div>
 
       {/* Navigation Bar */}
-      <nav className="bg-gray-50 border-b border-gray-200 hidden md:block">
+      <nav className="hidden border-b border-gray-200 bg-gray-50 md:block">
         <div className="container-custom">
           <div className="flex items-center">
             <div className="relative group">
@@ -166,7 +166,7 @@ const Header = () => {
                 <Menu size={18} />
                 <span>All Categories</span>
               </button>
-              <div className="absolute left-0 top-full w-56 bg-white shadow-lg rounded-b-lg z-40 hidden group-hover:block">
+              <div className="absolute left-0 z-40 hidden w-56 bg-white rounded-b-lg shadow-lg top-full group-hover:block">
                 {categories.map((category, index) => (
                   <Link
                     key={index}
@@ -208,7 +208,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 px-4 z-50">
+        <div className="absolute left-0 z-50 w-full px-4 py-4 bg-white shadow-lg md:hidden top-full">
           <nav className="flex flex-col space-y-4">
             <Link
               to="/"
