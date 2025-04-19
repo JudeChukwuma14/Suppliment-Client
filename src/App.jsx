@@ -8,8 +8,8 @@ import PrescriptionPage from "./pages/PrescriptionPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import FaqPage from "./pages/FaqPage";
-import BlogPage from "./pages/BlogPage";
-import BlogPost from "./pages/BlogPost";
+// import BlogPage from "./pages/BlogPage";
+// import BlogPost from "./pages/BlogPost";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import ReturnsPage from "./pages/ReturnsPage";
@@ -38,8 +38,8 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/faq" element={<FaqPage />} />
-              <Route path="/blog" element={<BlogPage />} />
-              <Route path="/blog/:id" element={<BlogPost />} />
+              {/* <Route path="/blog" element={<BlogPage />} />
+              <Route path="/blog/:id" element={<BlogPost />} /> */}
               <Route path="/terms" element={<TermsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/returns" element={<ReturnsPage />} />
