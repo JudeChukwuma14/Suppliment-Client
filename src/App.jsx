@@ -1,25 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import HomePage from "./pages/HomePage"
-import ShopPage from "./pages/ShopPage"
-import ProductDetail from "./pages/ProductDetail"
-import CartPage from "./pages/CartPage"
-import CheckoutPage from "./pages/CheckoutPage"
-import PrescriptionPage from "./pages/PrescriptionPage"
-import AboutPage from "./pages/AboutPage"
-import ContactPage from "./pages/ContactPage"
-import FaqPage from "./pages/FaqPage"
-import BlogPage from "./pages/BlogPage"
-import BlogPost from "./pages/BlogPost"
-import TermsPage from "./pages/TermsPage"
-import PrivacyPage from "./pages/PrivacyPage"
-import ReturnsPage from "./pages/ReturnsPage"
-import DisclaimerPage from "./pages/DisclaimerPage"
-import AccountPage from "./pages/AccountPage"
-import WishlistPage from "./pages/WishlistPage"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import WhatsAppButton from "./components/WhatsAppButton"
-import { CartProvider } from "./context/CartContext"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ShopPage from "./pages/ShopPage";
+import ProductDetail from "./pages/ProductDetail";
+import CartPage from "./pages/CartPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import PrescriptionPage from "./pages/PrescriptionPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import FaqPage from "./pages/FaqPage";
+import BlogPage from "./pages/BlogPage";
+import BlogPost from "./pages/BlogPost";
+import TermsPage from "./pages/TermsPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import ReturnsPage from "./pages/ReturnsPage";
+import DisclaimerPage from "./pages/DisclaimerPage";
+import AccountPage from "./pages/AccountPage";
+import WishlistPage from "./pages/WishlistPage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
@@ -53,7 +53,7 @@ function App() {
         </div>
       </CartProvider>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
